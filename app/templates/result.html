@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<h1>Analysis Result</h1>
+
+<img src="{{ image }}" width="250">
+
+<h2>Plant: {{ plant }}</h2>
+
+<h2>Disease: {{ disease }}</h2>
+
+<a href="/upload">Analyze Another Image</a>
+
+</body>
+</html>
