@@ -10,7 +10,7 @@ UPLOAD_FOLDER = "static/uploads"
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 # Load model
-model = load_model("model/plant_disease_model.h5")
+model = load_model("../model/plant_disease_model.h5")
 
 # Auto load class names from dataset
 TRAIN_DIR = r"C:\PlantCare-AI\dataset\dataset\New Plant Diseases Dataset(Augmented)\New Plant Diseases Dataset(Augmented)\train"
