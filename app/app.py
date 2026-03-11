@@ -17,7 +17,7 @@ app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
 # Load model with correct path (no more "../model/..." error)
 MODEL_PATH = os.path.join(BASE_DIR, "..", "model", "plant_disease_model.h5")
-model = load_model(MODEL_PATH)
+model = load_model(MODEL_PATH, compile=False)
 print(f"✅ Model loaded successfully from: {MODEL_PATH}")
 
 # Load class names from file (created once locally)
